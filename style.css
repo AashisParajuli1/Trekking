@@ -31,6 +31,7 @@ header {
   height: 350px;
   width: 100%;
   object-fit: cover;
+  transition: 0.4s;
 }
 
 .introduction .discription {
@@ -41,6 +42,14 @@ header {
   margin-left: 10px;
 }
 
+.introduction .introduction-image:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.introduction .image-area {
+  overflow: hidden;
+}
+
 /**introduction-end**/
 
 /**adventure-start**/
@@ -49,6 +58,15 @@ header {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: 0.4s;
+}
+
+.adventure .image-area {
+  overflow: hidden;
+}
+
+.adventure .adventure-image:hover {
+  transform: scale(1.1);
 }
 
 /**adventure-end**/
@@ -58,6 +76,15 @@ header {
   height: 400px;
   width: 100%;
   object-fit: cover;
+  transition: 0.4s;
+}
+
+.knowledge .image-area {
+  overflow: hidden;
+}
+
+.knowledge .knowledge-image:hover {
+  transform: scale(1.1);
 }
 
 /**knowledge-end**/
@@ -94,15 +121,44 @@ header {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: 0.4s;
+}
+
+.community .image-area {
+  overflow: hidden;
+}
+
+.community .card-image:hover {
+  transform: scale(1.1);
 }
 
 /**community-end**/
 
-/**chart-start**/
+/**chat-start**/
 .chat .chat-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.chat .image-area {
+  overflow: hidden;
+  position: relative;
+}
+.chat .image-area:hover::before {
+  opacity: 0.4;
+}
+
+.chat .image-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: silver;
+  opacity: 0;
+  transition: 0.4s;
 }
 
 /**chart-end**/
